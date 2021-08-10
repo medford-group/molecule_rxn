@@ -28,7 +28,7 @@ def to_dict(Graph):
     nodes=[]
     
     for node in Graph.nodes():
-        atoms.append(Graph.node[node].copy())
+        atoms.append(Graph.nodes[node].copy())
         nodes.append(node)
     
     for edge in Graph.edges():
